@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@molb/gobiz-styleguide": "^0.15.26",
+    "@r2wc/react-to-web-component": "^2.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
