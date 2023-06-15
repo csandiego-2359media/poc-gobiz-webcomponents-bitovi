@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "@molb/gobiz-styleguide": "^0.15.26",
-    "@r2wc/react-to-web-component": "^2.0.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@r2wc/react-to-web-component": "^1.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.63.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
