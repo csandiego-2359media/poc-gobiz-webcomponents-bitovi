@@ -1,0 +1,105 @@
+@font-face {
+    src: url(/HKNova-Light.otf);
+    font-family: hknova-light;
+    font-weight: 300;
+}
+
+@font-face {
+    src: url(/HKNova-Regular.otf);
+    font-family: hknova-regular;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(/HKNova-SemiBold.otf);
+    font-family: hknova-semibold;
+    font-weight: 600;
+}
+
+@font-face {
+    src: url(/HKNova-Medium.otf);
+    font-family: hknova-medium;
+    font-weight: 500;
+}
+
+@font-face {
+    src: url(/HKNova-Bold.otf);
+    font-family: hknova-bold;
+    font-weight: 700;
+}
+
+@font-face {
+    src: url(/HKNova-ExtraBold.otf);
+    font-family: hknova-extrabold;
+    font-weight: 800;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+    font-family: hknova-regular;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    font-family: hknova-semibold;
+    color: #037e8a;
+}
+
+.title {
+background-color: #037e8a;
+color: #ffffff;
+padding: 36px 48px;
+}
+
+.title > nav > ul {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.title > nav > ul > li {
+  display: flex;
+}
+
+.title > nav > ul > li+li::before {
+  content: "/";
+  padding: 10px 0px;
+}
+
+.title > nav > ul > li > a {
+  color: #ffffff;
+  display: block;
+  font-size: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.title > nav > ul > li:first-child > a {
+  padding: 10px 15px 10px 0px;
+}
+
+.title > nav > ul > li > a:hover {
+  color: #d6d6d6;
+}
+
+.title > h1 {
+  color: inherit;
+  margin-top: 24px;
+}

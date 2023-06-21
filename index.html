@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" src="/src/main.tsx"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <gb-header />
-    <!-- <gb-button label="It works!" />
-    <gb-icon-search /> -->
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React + TS</title>
+  <script type="module" src="/src/main.tsx"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <div>
+    <gb-header id="header" logo-url="/" option-list="optionList"
+      login-url="https://dashboard.gobusiness.gov.sg/login" />
+  </div>
+  <section class="title">
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">EPJS</a></li>
+        <li><a href="#">PROGRAMMES AND INITIATIVES</a></li>
+        <li><a href="#">DEVELOP HUMAN CAPITAL</a></li>
+      </ul>
+    </nav>
+    <h1>Develop Human Capital</h1>
+  </section>
+  <!-- <div>
+    <gb-row>
+      <gb-col span="12">
+        <h1>HELLO</h1>
+      </gb-col>
+    </gb-row>
+  </div> -->
+</body>
+
 </html>
