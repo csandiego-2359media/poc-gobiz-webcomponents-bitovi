@@ -103,3 +103,25 @@ padding: 36px 48px;
   color: inherit;
   margin-top: 24px;
 }
+
+.sidenav > nav > ul {
+  list-style-type: none;
+}
+
+.sidenav > nav > ul > li > a {
+  border-bottom: 1px solid #323232;
+  color: #323232;
+  display: block;
+  font-size: 16px;
+  padding: 12px 0px;
+  text-decoration: none;
+}
+
+.sidenav > nav > ul > li > a:hover,
+.sidenav > nav > ul > li > a.selected {
+  color: #037e8a;
+}
+
+.sidenav > nav > ul > li > a.selected {
+  font-weight: 600;
+}
