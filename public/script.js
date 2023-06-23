@@ -131,4 +131,12 @@ var optionList = () => [{
         sublevel: false,
       },
     ],
-  }];
+  }]
+
+  var headers = () => ['Service Name', 'Description']
+
+  var data = () => [
+    ['Absentee Payroll (AP) Funding', 'AP funding is a grant to help employers defray the manpower cost incurred when they send their employees for certifiable skills training.'],
+    ['Career Conversion Programme Application Portal', 'The Career Conversion Programmes application portal is for Professionals, Managers, Executives and Technicians, including Mid-career switchers to apply to undergo skills conversion and move into new occupations or sectors'],
+    ['Check E-Cert Validity', 'Employees who have attained Singapore Workforce Skills Qualifications (WSQ) electronic certificates (e-Cert) may check their validity here.'],
+  ]

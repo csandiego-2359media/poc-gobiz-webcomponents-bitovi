@@ -7,6 +7,7 @@ import r2wc from '@r2wc/react-to-web-component'
 import PreLoginHeader from './components/PreLoginHeader';
 import PLRow from './components/PLRow';
 import PLCol from './components/PLCol';
+import PLTable from "./components/PLTable";
 
 // ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 //   <React.StrictMode>
@@ -23,6 +24,8 @@ const HeaderWC = r2wc(PreLoginHeader, {
 })
 const ColWC = r2wc(PLCol, {shadow: 'closed', props: {span: 'number'}})
 const RowWC = r2wc(PLRow, {shadow: 'closed', props: {gutter: 'number'}})
+const TableWC = r2wc(PLTable, {shadow: 'closed', props: {headers: 'function', data: 'function', showActionColumn: 'boolean'}})
 customElements.define('gb-header', HeaderWC)
 customElements.define('gb-col', ColWC)
 customElements.define('gb-row', RowWC)
+customElements.define('gb-table', TableWC)
