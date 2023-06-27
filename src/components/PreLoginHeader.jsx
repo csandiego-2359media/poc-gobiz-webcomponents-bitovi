@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import { Menu, Button, IconButton, Icon, Header } from "@molb/gobiz-styleguide";
-import { MenuOption } from "@molb/gobiz-styleguide/src/components/menu/components/MenuHeader";
+// import { MenuOption } from "@molb/gobiz-styleguide/src/components/menu/components/MenuHeader";
 
 const HeaderContent = styled.div`
   display: flex;
@@ -12,14 +12,16 @@ const HeaderContent = styled.div`
   }
 `;
 
-interface PreLoginHeaderProps {
-    logoUrl: string | undefined;
-    optionList: () => MenuOption[] | undefined;
-    loginUrl: string | undefined;
-}
+// interface PreLoginHeaderProps {
+//     logoUrl: string | undefined;
+//     optionList: (() => MenuOption[]) | undefined;
+//     loginUrl: string | undefined;
+// }
 
-const PreLoginHeader: React.FC<PreLoginHeaderProps> = ({logoUrl, optionList, loginUrl}) => {
-    const onOptionClick = (key: string) => { window.location.href = key };
+// const PreLoginHeader: React.FC<PreLoginHeaderProps> = ({logoUrl, optionList, loginUrl}) => {
+const PreLoginHeader = ({logoUrl, optionList, loginUrl}) => {
+    // const onOptionClick = (key: string) => { window.location.href = key };
+    const onOptionClick = (key) => { window.location.href = key };
     const onLoginClick = () => { 
         if (loginUrl) {
             window.location.href = loginUrl

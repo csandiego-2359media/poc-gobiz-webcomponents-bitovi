@@ -1,14 +1,15 @@
 import React from "react";
 import { Row } from "@molb/gobiz-styleguide";
+import { GutterSize } from "@molb/gobiz-styleguide/src/components/grid/Row";
 
 interface PLRowProps {
     className: string | undefined;
-    gutter: number | undefine;
-    lg: number | undefined;
-    md: number | undefined;
-    sm: number | undefined;
-    xl: number | undefined;
-    xs: number | undefined;
+    gutter: GutterSize | undefined;
+    lg: GutterSize | undefined;
+    md: GutterSize | undefined;
+    sm: GutterSize | undefined;
+    xl: GutterSize | undefined;
+    xs: GutterSize | undefined;
 };
 
 const PLRow: React.FC<PLRowProps> = (props) => {
